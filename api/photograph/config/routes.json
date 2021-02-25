@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/photographs",
+      "handler": "photograph.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/photographs/count",
+      "handler": "photograph.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/photographs/:id",
+      "handler": "photograph.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/photographs",
+      "handler": "photograph.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/photographs/:id",
+      "handler": "photograph.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/photographs/:id",
+      "handler": "photograph.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
